@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour {
 
     public int health = 10;
 
-    TimeSpan time;
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
@@ -34,7 +33,6 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        time += TimeSpan.FromSeconds(Time.deltaTime);
         invulTimer -= Time.deltaTime;
 
         Vector3 pos = transform.position;
@@ -69,7 +67,7 @@ public class PlayerController : MonoBehaviour {
 
             Vector3 velocity = Vector3.up;
             velocity.x = h;
-            velocity += transform.up;
+            //velocity += transform.up;
             if (v < 0)
                 rigidbody.velocity = velocity.normalized * speed * 0.5f;
             else
@@ -90,13 +88,16 @@ public class PlayerController : MonoBehaviour {
         if (!collision.gameObject.CompareTag("PowerUp") && !hit)
         {
             // Debug.Log(collision.rigidbody.gameObject.name);
-            if (rigidbody.transform.position.x > collision.rigidbody.transform.position.x)
-                collision.rigidbody.velocity += new Vector2(-2 / collision.rigidbody.mass, speed);
-            else collision.rigidbody.velocity += new Vector2(2 / collision.rigidbody.mass, speed);
+            if (collision.rigidbody != null)
+            {
+                if (transform.position.x > collision.transform.position.x)
+                    collision.rigidbody.velocity += new Vector2(-2 / collision.rigidbody.mass, speed);
+                else collision.rigidbody.velocity += new Vector2(2 / collision.rigidbody.mass, speed);
+            }
 
             // Check which hitbox is being hit then damage ship
             float damageScale = collision.otherCollider == noseCollider ? 1f : 0.5f;
-            TakeDamage(collision.rigidbody.mass * damageScale);
+            TakeDamage(collision.gameObject.GetComponent<Obstacle>().damage * damageScale);
         }
     }
     void TakeDamage(float damage)
@@ -107,17 +108,7 @@ public class PlayerController : MonoBehaviour {
         audioSource.Play();
         if (health <= 0)
         {
-            GameOver();
+            GameManager.INSTANCE.GameOver(this);
         }
-    }
-    void GameOver()
-    {
-        GetComponent<GameOverScript>().enabled = true;
-        active = false;
-    }
-    void OnGUI()
-    {
-	Scene scene = SceneManager.GetActiveScene();
-        GUI.Label(new Rect(10, 10, 200, 20), string.Format("time: {0}:{1}:{2} // health: {3}", time.Minutes, time.Seconds, time.Milliseconds,health));	
     }
 }
