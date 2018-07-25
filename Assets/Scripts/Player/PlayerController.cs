@@ -100,15 +100,27 @@ public class PlayerController : MonoBehaviour {
             TakeDamage(collision.gameObject.GetComponent<Obstacle>().damage * damageScale);
         }
     }
-    void TakeDamage(float damage)
+    private void OnParticleCollision(GameObject other)
     {
-        hit = true;
-        invulTimer = invulTime;
-        health -= Mathf.CeilToInt(damage);
-        audioSource.Play();
-        if (health <= 0)
+        Debug.Log("Particle Collision");
+        Obstacle obstacle = other.GetComponent<Obstacle>();
+        if(obstacle != null)
         {
-            GameManager.INSTANCE.GameOver(this);
+            TakeDamage(obstacle.damage);
+        }
+    }
+    public void TakeDamage(float damage)
+    {
+        if (!hit)
+        {
+            hit = true;
+            invulTimer = invulTime;
+            health -= Mathf.CeilToInt(damage);
+            audioSource.Play();
+            if (health <= 0)
+            {
+                GameManager.INSTANCE.GameOver(this);
+            }
         }
     }
 }
