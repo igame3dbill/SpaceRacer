@@ -16,8 +16,8 @@ public class GameOverScript : MonoBehaviour
     {
 		GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "");
 		GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 30, 100, 20), "Game Over");
-        GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 10, 200, 20), "Main Menu");
-		if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 40, 200, 20), "Try Again"))
+        GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 -+ 20, 200, 20), "Main Menu");
+		if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 10, 200, 20), "Try Again"))
 			SceneManager.LoadScene(scene.name);
     }
 }
