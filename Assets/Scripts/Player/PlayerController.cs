@@ -21,9 +21,13 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] Collider2D noseCollider;
 
     public int health = 10;
+    public AudioClip damageSound;
+    public AudioClip shieldSound;
+    public ParticleSystem shipDebris;
+    public GameObject shipShield;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
@@ -34,6 +38,10 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         invulTimer -= Time.deltaTime;
+        if (invulTimer <= 0f)
+        {
+            shipShield.SetActive(false);
+        }
 
         Vector3 pos = transform.position;
         if (active)
@@ -48,7 +56,7 @@ public class PlayerController : MonoBehaviour {
 
             float h = Input.GetAxisRaw("Horizontal");
             float v = Input.GetAxis("Vertical");
-
+            Debug.Log(Input.GetAxisRaw("Horizontal"));
             //Debug.Log(h);
             if (h < 0f)
             {
@@ -80,7 +88,12 @@ public class PlayerController : MonoBehaviour {
             sprite.enabled = false;
         }
 
-	}
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            GameManager.INSTANCE.GameOver(this);
+        }
+
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -99,6 +112,10 @@ public class PlayerController : MonoBehaviour {
             float damageScale = collision.otherCollider == noseCollider ? 1f : 0.5f;
             TakeDamage(collision.gameObject.GetComponent<Obstacle>().damage * damageScale);
         }
+        else if (!collision.gameObject.CompareTag("PowerUp") && hit)
+        {
+            AudioSource.PlayClipAtPoint(shieldSound, transform.position, 200f);
+        }
     }
     private void OnParticleCollision(GameObject other)
     {
@@ -111,12 +128,15 @@ public class PlayerController : MonoBehaviour {
     }
     public void TakeDamage(float damage)
     {
-        if (!hit)
+        
+        if(!hit)
         {
             hit = true;
             invulTimer = invulTime;
+            shipShield.SetActive(true);
             health -= Mathf.CeilToInt(damage);
-            audioSource.Play();
+            AudioSource.PlayClipAtPoint(damageSound, transform.position, 100f);
+            Instantiate(shipDebris, transform.position, Quaternion.identity);
             if (health <= 0)
             {
                 GameManager.INSTANCE.GameOver(this);
