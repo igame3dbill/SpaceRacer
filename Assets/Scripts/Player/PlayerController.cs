@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
 
     [SerializeField]
     float speed = 1;
-    int hConstraint = 2;
+    int hConstraint = 4;
     float invulTime = 1;       //invulnerability - measured in seconds
     float invulTimer = 0;
     bool hit = false;
@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour {
     public AudioClip damageSound;
     public AudioClip shieldSound;
     public ParticleSystem shipDebris;
+    public AudioClip powerUpSound;
     public GameObject shipShield;
 
     // Use this for initialization
@@ -116,7 +117,14 @@ public class PlayerController : MonoBehaviour {
         {
             AudioSource.PlayClipAtPoint(shieldSound, transform.position, 200f);
         }
+        else if (collision.gameObject.CompareTag("PowerUp"))
+        {
+            health = health + 1;
+            collision.gameObject.SetActive(false);
+            AudioSource.PlayClipAtPoint(powerUpSound, transform.position, 100f);
+        }
     }
+
     private void OnParticleCollision(GameObject other)
     {
         Debug.Log("Particle Collision");
