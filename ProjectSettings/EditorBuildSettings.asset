@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpriteStaging01.unity
     guid: 6bf0fb76151cbc3478ddc21b42067412
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 3d101869501268046984186ad7eccf17
   m_configObjects: {}
