@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        Time.timeScale = 1;
         if (INSTANCE == null)
             INSTANCE = this;
         else
@@ -35,4 +36,6 @@ public class GameManager : MonoBehaviour {
         if (INSTANCE == this)
             INSTANCE = null;
     }
+
+
 }
