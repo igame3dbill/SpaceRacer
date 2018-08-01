@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour {
         GetComponent<GameOverScript>().enabled = true;
         player.gameObject.SetActive(false);
     }
+
+
     private void OnDestroy()
     {
         if (INSTANCE == this)
