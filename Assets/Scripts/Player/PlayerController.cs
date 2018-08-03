@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour {
 
             float h = Input.GetAxisRaw("Horizontal");
             float v = Input.GetAxis("Vertical");
-            Debug.Log(Input.GetAxisRaw("Horizontal"));
+            //Debug.Log(Input.GetAxisRaw("Horizontal"));
             //Debug.Log(h);
             if (h < 0f)
             {

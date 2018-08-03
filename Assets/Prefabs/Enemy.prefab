@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4041229030766344}
   - component: {fileID: 114855590357227534}
   - component: {fileID: 50589752496487912}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4555739476968230}
   - component: {fileID: 212540112025789410}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GeneratedShips_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,8 +104,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sightRange: 5
   minAttackRange: 2
+  maxAttackRange: 5
   turnSpeed: 2
   moveSpeed: 4
+  attackSpeed: 5
+  projectile: {fileID: 1126333279263086, guid: d963c089108049e4e848ce7f57552787, type: 2}
 --- !u!212 &212540112025789410
 SpriteRenderer:
   m_ObjectHideFlags: 1

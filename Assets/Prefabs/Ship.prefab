@@ -311,6 +311,7 @@ MonoBehaviour:
   shieldSound: {fileID: 8300000, guid: ca1120d297dac344bbf284fc05a87db1, type: 3}
   shipDebris: {fileID: 198865969789430624, guid: 3369fc8f11fecc74993bf3849b86d370,
     type: 2}
+  powerUpSound: {fileID: 8300000, guid: aea10f07c8ad9424c9a95100a92714a2, type: 3}
   shipShield: {fileID: 1578199867590440}
 --- !u!212 &212636310417273108
 SpriteRenderer:
