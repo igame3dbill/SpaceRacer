@@ -24,9 +24,9 @@ public class EnemyAI : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         if (attackTimer > 0)
-            attackTimer -= Time.deltaTime;
+            attackTimer -= Time.fixedDeltaTime;
         //Vector3 angles = transform.eulerAngles;
         //angles.z = Vector3.Angle(Vector3.zero, displacement);
         //transform.eulerAngles = angles;
@@ -35,7 +35,7 @@ public class EnemyAI : MonoBehaviour {
         {
             Vector3 displacement = transform.position - player.transform.position;
             float angle = Mathf.Atan2(displacement.y, displacement.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.AngleAxis(angle + 90, Vector3.forward), turnSpeed*Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.AngleAxis(angle + 90, Vector3.forward), turnSpeed*Time.fixedDeltaTime);
 
             if(attackTimer <= 0 && sqrMag < maxAttackRange * maxAttackRange)
             {

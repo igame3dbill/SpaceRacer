@@ -15,11 +15,11 @@ public class BulletAI : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         rigidbody.velocity = transform.up * speed;
 		if(deathTimer > 0)
         {
-            deathTimer -= Time.deltaTime;
+            deathTimer -= Time.fixedDeltaTime;
             if(deathTimer <= 0)
             {
                 Destroy(this.gameObject);

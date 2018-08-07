@@ -112,11 +112,12 @@ public class PlayerController : MonoBehaviour {
             // Check which hitbox is being hit then damage ship
             float damageScale = collision.otherCollider == noseCollider ? 1f : 0.5f;
             TakeDamage(collision.gameObject.GetComponent<Obstacle>().damage * damageScale);
-        }
-        else if (!collision.gameObject.CompareTag("PowerUp") && hit)
-        {
             AudioSource.PlayClipAtPoint(shieldSound, transform.position, 200f);
         }
+        /*else if (!collision.gameObject.CompareTag("PowerUp") && hit)
+        {
+            AudioSource.PlayClipAtPoint(shieldSound, transform.position, 200f);
+        }*/
         else if (collision.gameObject.CompareTag("PowerUp"))
         {
             health = health + 1;
