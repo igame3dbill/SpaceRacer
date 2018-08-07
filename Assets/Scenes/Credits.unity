@@ -468,8 +468,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 2.5}
-  m_SizeDelta: {x: 160, y: 263.3}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 886, y: 403}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384014055
 MonoBehaviour:
@@ -643,7 +643,7 @@ MonoBehaviour:
 
     Chance
 
-    Billl'
+    Bill'
 --- !u!222 &1484842989
 CanvasRenderer:
   m_ObjectHideFlags: 0
