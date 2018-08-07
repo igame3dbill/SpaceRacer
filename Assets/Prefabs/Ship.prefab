@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 1023550707906750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4443828882502666}
   m_Father: {fileID: 0}
@@ -114,26 +114,23 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 2.34, y: 2.13}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.0058835, y: -0.3628104}
-      - {x: 0.44050324, y: -0.52723604}
-      - {x: 0.34714982, y: -0.96889806}
-      - {x: -0.35551104, y: -0.95325214}
-      - {x: -0.41046107, y: -0.50654197}
-      - {x: -0.98712766, y: -0.37572455}
-      - {x: -1.1558414, y: -0.16550344}
-      - {x: -0.44575354, y: 0.08105385}
-      - {x: -0.30501303, y: 0.4309907}
-      - {x: 0.29503715, y: 0.42975873}
-      - {x: 0.45298266, y: 0.08793017}
-      - {x: 1.1494963, y: -0.14778614}
+    - - {x: -0.11545806, y: 0.019482762}
+      - {x: -0.06985756, y: 0.1135063}
+      - {x: 0.06908202, y: 0.10975893}
+      - {x: 0.11360029, y: 0.023541924}
+      - {x: 0.282898, y: -0.04273981}
+      - {x: 0.09344359, y: -0.22632556}
+      - {x: -0.093327045, y: -0.23259035}
+      - {x: -0.26186198, y: -0.07446745}
+      - {x: -0.29441428, y: -0.025226057}
 --- !u!60 &60768846299220802
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -150,19 +147,18 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 2.34, y: 2.13}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.0064267814, y: 1.1436667}
-      - {x: -0.18957847, y: 1.0085716}
-      - {x: -0.31463256, y: 0.4277025}
-      - {x: 0.2958561, y: 0.41789275}
-      - {x: 0.19342382, y: 1.0119549}
+    - - {x: 0.03711711, y: 0.27647787}
+      - {x: -0.039902166, y: 0.27455598}
+      - {x: -0.07093053, y: 0.11267781}
+      - {x: 0.072507754, y: 0.11220378}
 --- !u!82 &82120129668574332
 AudioSource:
   m_ObjectHideFlags: 1
@@ -407,12 +403,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 99
-  m_Sprite: {fileID: 21300000, guid: c5eea68b6d9f25a4aaa1f2bedbfa1563, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5d4c144e8136f5249a9141ec71b549ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.34, y: 2.13}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
