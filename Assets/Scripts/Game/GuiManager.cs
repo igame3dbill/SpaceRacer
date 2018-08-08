@@ -11,14 +11,11 @@ public class GuiManager : MonoBehaviour {
     void Start () {
 		
 	}
-<<<<<<< HEAD
 	
 	// Update is called once per frame
 	void Update () {
         deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
     }
-=======
->>>>>>> 944b26c53ab26cf75752ac966473c8a54048626e
 
     void OnGUI()
     {
