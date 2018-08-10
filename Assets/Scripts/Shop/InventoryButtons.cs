@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 [RequireComponent(typeof(UnityEngine.UI.Button))]
 [RequireComponent(typeof(UnityEngine.UI.Image))]
 [ExecuteInEditMode]
-public class ClickableText : MonoBehaviour {
+public class InventoryButtons : MonoBehaviour {
     Image image;
     Button button1;
 	// Use this for initialization
@@ -18,11 +18,9 @@ public class ClickableText : MonoBehaviour {
         image.sprite = Resources.Load<Sprite>("Textures/BackgroundNew");
 
         button1 = this.gameObject.GetComponent<Button>();
+        // add button callback to onclick
         button1.onClick.AddListener(() => buttonCallBack(button1));
 
-        /*this.gameObject.AddComponent<ButtonClickDetector>();
-        ButtonClickDetector BCD = this.gameObject.GetComponent<ButtonClickDetector>() as ButtonClickDetector;
-        BCD.OnEnable();*/
     }
 
     void buttonCallBack(Button buttonPressed)
@@ -33,4 +31,12 @@ public class ClickableText : MonoBehaviour {
             Debug.Log("Clicked: " + button1.name);
         }
     }
+
+    void OnDisable()
+    {
+        //Un-Register Button Events
+        button1.onClick.RemoveAllListeners();
+        //button2.onClick.RemoveAllListeners();
+        // button3.onClick.RemoveAllListeners();
     }
+}

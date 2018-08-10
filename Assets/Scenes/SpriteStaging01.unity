@@ -149,6 +149,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &114243506 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1230441485015880, guid: 5bb0d3837d4d4f148a8db0a84099e3be,
+    type: 2}
+  m_PrefabInternal: {fileID: 2058459398}
 --- !u!224 &114243507 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224730476646400096, guid: 5bb0d3837d4d4f148a8db0a84099e3be,
@@ -5043,7 +5048,7 @@ Prefab:
         type: 2}
       propertyPath: shopPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 114243506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 110d87b5310e82b4488c1f8e2871ad68, type: 2}
   m_IsPrefabAsset: 0

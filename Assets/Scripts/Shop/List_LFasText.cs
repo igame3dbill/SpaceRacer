@@ -56,8 +56,7 @@ public class List_LFasText : MonoBehaviour
     */
 
     void TextUpdate()
-    {
-        
+    {     
         Text tText = this.GetComponent<UnityEngine.UI.Text>();
         if (!tText) { this.gameObject.AddComponent<UnityEngine.UI.Text>(); }
         tText.alignment = TextAnchor.UpperLeft;
@@ -91,8 +90,6 @@ public class List_LFasText : MonoBehaviour
     {
         //Init();
     }
-
-
 
     void Update()
     {

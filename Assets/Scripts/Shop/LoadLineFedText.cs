@@ -21,7 +21,7 @@ public class LoadLineFedText : MonoBehaviour
     {
         // be sure to name the game object the top path name of your files
         appPath = Application.dataPath + "/Resources/" + this.gameObject.name;
-        Debug.Log(appPath);
+        //Debug.Log(appPath);
         string[] dirs = Directory.GetDirectories(appPath, "*"); // appPath, "*", SearchOption.TopDirectoryOnly);  
         foreach (string dir in dirs)
         {
@@ -49,7 +49,6 @@ public class LoadLineFedText : MonoBehaviour
         newObject.GetComponent<ListsInTextAsset>().TextFile = textFile;
         newObject.GetComponent<ListsInTextAsset>().Init();
         
-
         // continue if we have items
         if (newObject.GetComponent<ListsInTextAsset>().item != null)
         {
@@ -66,7 +65,7 @@ public class LoadLineFedText : MonoBehaviour
                     newObject.tag = "Category";
 
                     //   Destroy ListFromTextAssets so that the objects can travel independnet of files original text files.
-                    // Enable Exit in Edit Mode to produce files Objects in advance of run time.
+                    // Enable Edit in Edit Mode to produce files Objects in advance of run time.
                     DestroyImmediate(newObject.GetComponent<ListsInTextAsset>());
                     
                 }
@@ -114,8 +113,8 @@ public class LoadLineFedText : MonoBehaviour
         rectTransform.localPosition += Vector3.down * top;
       
         folderObject.name = currentFolder.Replace(appPath + "\\", "");
-        // add background image and clickable action to text
-        folderObject.AddComponent<ClickableText>();
+        // add background image and clickable button action to text
+        folderObject.AddComponent<InventoryButtons>();
         DirectoryInfo dir = new DirectoryInfo(currentFolder);
         FileInfo[] info = dir.GetFiles("*.*");
         foreach (FileInfo f in info)
