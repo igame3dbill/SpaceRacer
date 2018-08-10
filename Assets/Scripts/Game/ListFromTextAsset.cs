@@ -33,7 +33,7 @@ public class ListFromTextAsset : MonoBehaviour
             //get the table name
             string[] tableInput = theWholeFileAsOneLongString.Split("="[0]);
             this.gameObject.name = tableInput[0];
-            if (tableInput.Length >= 1)
+            if (tableInput.Length != 0)
             {
                 // population the data list
                 item = new List<string>();

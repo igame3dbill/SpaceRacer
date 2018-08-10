@@ -4,8 +4,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-//using UnityEngine.UI;
-[RequireComponent(typeof(TextMesh))]
+using UnityEngine.UI;
+
 
 [ExecuteInEditMode]
 public class ListsInTextAsset : MonoBehaviour
@@ -62,20 +62,21 @@ public class ListsInTextAsset : MonoBehaviour
            }
        }*/
 
-    void TextMeshUpdate()
+    void TextUpdate()
     {
-        TextMesh tTextmesh = this.GetComponent<TextMesh>();
-        if (!tTextmesh) { this.gameObject.AddComponent<TextMesh>(); }
-        tTextmesh.alignment = TextAlignment.Center;
-        if (tTextmesh == null) { return; }
+        Text tText = this.GetComponent<UnityEngine.UI.Text>();
+        if (!tText) { this.gameObject.AddComponent<UnityEngine.UI.Text>(); }
+        tText.alignment = TextAnchor.UpperLeft;
+        
+        if (tText == null) { return; }
 
         if (Application.isPlaying)
         {
-            tTextmesh.text = gameText;
+            tText.text = gameText;
         }
         else
         {
-            tTextmesh.text = editingText;
+            tText.text = editingText;
         }
     }
     // Use this for initialization
@@ -83,7 +84,7 @@ public class ListsInTextAsset : MonoBehaviour
     {
         editing = false;
         Init();
-        TextMeshUpdate();
+        TextUpdate();
     }
 
     void Awake()
@@ -107,7 +108,7 @@ public class ListsInTextAsset : MonoBehaviour
         if (Activate && !hasInit && !editing)
         {
             Init();
-            TextMeshUpdate();
+            TextUpdate();
             Activate = false;
             hasInit = true;
         }
@@ -116,7 +117,7 @@ public class ListsInTextAsset : MonoBehaviour
         {
             gameText = theWholeFileAsOneLongString;
             editingText = gameText;
-            TextMeshUpdate();
+            TextUpdate();
         }
 
     }

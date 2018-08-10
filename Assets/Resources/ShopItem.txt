@@ -1,3 +1,0 @@
-Shield Stabilizer,0,3,-1,10000
-Hull Reinforcement,5,0,-2,5000
-Lighter Alloys,-3,0,+2,12000

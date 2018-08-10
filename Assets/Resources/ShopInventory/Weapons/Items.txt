@@ -1,0 +1,3 @@
+Turrent Mark I,0,3,-1,10000
+Guided Missile I,5,0,-2,5000
+Proximity Mine,-3,0,+2,12000
