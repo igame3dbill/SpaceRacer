@@ -42,19 +42,19 @@ public class LoadLineFedText : MonoBehaviour
     }
 
     //Apply ListsInTextAsset Script to game object to import the text and to attach Text component
-    void AttachTextScripts(GameObject newObject, TextAsset textFile)
+    void AttachTextScripts(GameObject textObject, TextAsset textFile)
     {
         // ListsInTextAsset uses file IO to populate item list with strings.;
-        newObject.AddComponent<ListsInTextAsset>();
-        newObject.GetComponent<ListsInTextAsset>().TextFile = textFile;
-        newObject.GetComponent<ListsInTextAsset>().Init();
+        textObject.AddComponent<ListsInTextAsset>();
+        textObject.GetComponent<ListsInTextAsset>().TextFile = textFile;
+        textObject.GetComponent<ListsInTextAsset>().Init();
         
         // continue if we have items
-        if (newObject.GetComponent<ListsInTextAsset>().item != null)
+        if (textObject.GetComponent<ListsInTextAsset>().item != null)
         {
             // Apply List_LFasText script component to this object.
-            newObject.AddComponent<List_LFasText>();
-            List_LFasText listText = newObject.GetComponent<List_LFasText>();
+            textObject.AddComponent<List_LFasText>();
+            List_LFasText listText = textObject.GetComponent<List_LFasText>();
             if (listText != null)
             {
                 // transfer list items from file to self contained list display script
@@ -62,11 +62,11 @@ public class LoadLineFedText : MonoBehaviour
                 if (listText.item.Count >= 1)
                 {
                     // files represented as GameObjects  are tagged as Category
-                    newObject.tag = "Category";
+                    textObject.tag = "Category";
 
                     //   Destroy ListFromTextAssets so that the objects can travel independnet of files original text files.
                     // Enable Edit in Edit Mode to produce files Objects in advance of run time.
-                    DestroyImmediate(newObject.GetComponent<ListsInTextAsset>());
+                    DestroyImmediate(textObject.GetComponent<ListsInTextAsset>());
                     
                 }
             }
@@ -123,16 +123,13 @@ public class LoadLineFedText : MonoBehaviour
             if (!f.Name.Contains(".meta") && f.Name.Contains(".txt"))
             {
                 // Create new object for each .txt file
-                GameObject newObject = new GameObject();
+                GameObject textObject = new GameObject();
                 //Lua table files from previous version appended _Table to let you know what they had in 'em
                 string newName = f.Name.Replace("_Table.txt", "");
-                newObject.name = newName;
-                newObject.layer = 5; //UI
-                newObject.transform.SetParent(folderObject.transform, false);
+                textObject.name = newName;
+                textObject.layer = 5; //UI
+                textObject.transform.SetParent(folderObject.transform, false);
 
-                
-
-               
                 // Load file path into Unity TextAsset
                 string shortPath = this.gameObject.name + "/" + folderObject.name + "/" + f.Name;
                 shortPath = shortPath.Replace(".txt", "");
@@ -140,11 +137,13 @@ public class LoadLineFedText : MonoBehaviour
                 if (textFile != null)
                 {
                     // Attach Additional Scripts to Object
-                    AttachTextScripts(newObject, textFile);
+                    AttachTextScripts(textObject, textFile);
                     // Match RectTransform to Parent.
-                    MatchOther(newObject.GetComponent<RectTransform>(), folderObject.GetComponent<RectTransform>());
-                    rectTransform = newObject.GetComponent<RectTransform>();
-                    rectTransform.localPosition += Vector3.forward;
+                    MatchOther(textObject.GetComponent<RectTransform>(), folderObject.GetComponent<RectTransform>());
+                    // a little indent
+                    rectTransform = textObject.GetComponent<RectTransform>();
+                    rectTransform.localPosition += Vector3.down * 3;
+                    rectTransform.localPosition += Vector3.right *10;
                     //textFile = null;
 
                 }
