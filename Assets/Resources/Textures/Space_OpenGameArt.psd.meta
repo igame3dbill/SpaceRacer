@@ -1,7 +1,109 @@
 fileFormatVersion: 2
 guid: 704c7b631bf122645ac33c03c809dffe
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Space_OpenGameArt_0
+    21300002: Space_OpenGameArt_2
+    21300004: Space_OpenGameArt_4
+    21300006: Space_OpenGameArt_5
+    21300008: Space_OpenGameArt_6
+    21300010: Space_OpenGameArt_7
+    21300012: Space_OpenGameArt_8
+    21300014: Space_OpenGameArt_9
+    21300016: Space_OpenGameArt_20
+    21300018: Space_OpenGameArt_22
+    21300020: Space_OpenGameArt_23
+    21300022: Space_OpenGameArt_25
+    21300024: Space_OpenGameArt_26
+    21300026: Space_OpenGameArt_27
+    21300028: Space_OpenGameArt_28
+    21300030: Space_OpenGameArt_29
+    21300032: Space_OpenGameArt_30
+    21300034: Space_OpenGameArt_31
+    21300036: Space_OpenGameArt_32
+    21300038: Space_OpenGameArt_33
+    21300040: Space_OpenGameArt_34
+    21300042: Space_OpenGameArt_35
+    21300044: Space_OpenGameArt_36
+    21300046: Space_OpenGameArt_37
+    21300048: Space_OpenGameArt_38
+    21300050: Space_OpenGameArt_39
+    21300052: Space_OpenGameArt_40
+    21300054: Space_OpenGameArt_41
+    21300056: Space_OpenGameArt_42
+    21300058: Space_OpenGameArt_43
+    21300060: Space_OpenGameArt_44
+    21300062: Space_OpenGameArt_45
+    21300064: Space_OpenGameArt_46
+    21300066: Space_OpenGameArt_47
+    21300068: Space_OpenGameArt_48
+    21300070: Space_OpenGameArt_49
+    21300072: Space_OpenGameArt_50
+    21300074: Space_OpenGameArt_51
+    21300076: Space_OpenGameArt_52
+    21300078: Space_OpenGameArt_53
+    21300080: Space_OpenGameArt_54
+    21300082: Space_OpenGameArt_55
+    21300084: Space_OpenGameArt_56
+    21300086: Space_OpenGameArt_57
+    21300088: Space_OpenGameArt_58
+    21300090: Space_OpenGameArt_59
+    21300092: Space_OpenGameArt_60
+    21300094: Space_OpenGameArt_61
+    21300096: Space_OpenGameArt_62
+    21300098: Space_OpenGameArt_63
+    21300100: Space_OpenGameArt_64
+    21300102: Space_OpenGameArt_65
+    21300104: Space_OpenGameArt_66
+    21300106: Space_OpenGameArt_67
+    21300108: Space_OpenGameArt_68
+    21300110: Space_OpenGameArt_69
+    21300112: Space_OpenGameArt_70
+    21300114: Space_OpenGameArt_71
+    21300116: Space_OpenGameArt_72
+    21300118: Space_OpenGameArt_73
+    21300120: Space_OpenGameArt_74
+    21300122: Space_OpenGameArt_75
+    21300124: Space_OpenGameArt_76
+    21300126: Space_OpenGameArt_77
+    21300128: Space_OpenGameArt_78
+    21300130: Space_OpenGameArt_79
+    21300132: Space_OpenGameArt_80
+    21300134: Space_OpenGameArt_81
+    21300136: Space_OpenGameArt_82
+    21300138: Space_OpenGameArt_83
+    21300140: Space_OpenGameArt_84
+    21300142: Space_OpenGameArt_85
+    21300144: Space_OpenGameArt_86
+    21300146: Space_OpenGameArt_87
+    21300148: Space_OpenGameArt_88
+    21300150: Space_OpenGameArt_89
+    21300152: Space_OpenGameArt_90
+    21300154: Space_OpenGameArt_91
+    21300156: Space_OpenGameArt_92
+    21300158: Space_OpenGameArt_93
+    21300160: Space_OpenGameArt_94
+    21300162: Space_OpenGameArt_95
+    21300164: Space_OpenGameArt_96
+    21300166: Space_OpenGameArt_97
+    21300168: Space_OpenGameArt_98
+    21300170: Space_OpenGameArt_99
+    21300172: Space_OpenGameArt_1
+    21300174: Space_OpenGameArt_3
+    21300176: Space_OpenGameArt_10
+    21300178: Space_OpenGameArt_11
+    21300180: Space_OpenGameArt_12
+    21300182: Space_OpenGameArt_13
+    21300184: Space_OpenGameArt_14
+    21300186: Space_OpenGameArt_15
+    21300188: Space_OpenGameArt_16
+    21300190: Space_OpenGameArt_17
+    21300192: Space_OpenGameArt_18
+    21300194: Space_OpenGameArt_19
+    21300196: Space_OpenGameArt_21
+    21300198: Space_OpenGameArt_24
+    21300200: Space_OpenGameArt_100
+    21300202: Space_OpenGameArt_101
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +142,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +171,1282 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Space_OpenGameArt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2296
+        width: 429
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91926f15c1f0e4b4ca8aa14b37d795a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_2
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 2274
+        width: 437
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2620f463536c24cb9350b5c9fd2616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_4
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2265
+        width: 415
+        height: 466
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f7d2758fd5d7a42ae19168e44aa71b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_5
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 2309
+        width: 376
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2353a385203fac043acb832b9b85b695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_7
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 2349
+        width: 313
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28eb059b32f321d4f9ad60f9f893ffd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_8
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 2353
+        width: 283
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bf91ebdc756224a96263299f294bc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_9
+      rect:
+        serializedVersion: 2
+        x: 2414
+        y: 2371
+        width: 274
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c515d61a59ccff043a45396b71bf1871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_20
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 2014
+        width: 231
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da8f88860aabeb47a8c140cb98dda3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_22
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 2009
+        width: 297
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba9ec3b855abf141bce21919f4aa391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_23
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 2018
+        width: 321
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019495a7c66c7d04abb64b45b2370142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_25
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 2072
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689f91bc03f0e8346a21c395edbd496a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_26
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 2027
+        width: 93
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618bbeca09113de408fe934bc45de7dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_27
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 2031
+        width: 130
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48291959f6cc92142aa0f1aba68ce9ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_28
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 1965
+        width: 175
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d816838874f88b41bdf3787af60c37a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_30
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1422
+        width: 363
+        height: 522
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6893ee9c9a4c58a49a17e0e2c2d6db17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_31
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1633
+        width: 271
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa13ede7255263c4db8caf24e45585e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_32
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1648
+        width: 195
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9365e3d9a75ef8e41aee834bbee596fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_1
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 2062
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d47dde932dacb448b20a36092bbaa1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_3
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 2025
+        width: 102
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6646050296e2d4a82306d726441056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_10
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 2051
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0369c59722810da4684ca7d0549c3464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_11
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1642
+        width: 164
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb77a7a673448e342baf70a721b404b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_12
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 1636
+        width: 151
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6392e3dd9c4b1744a4e55c47a502bcc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_13
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1645
+        width: 152
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a6f88b7dbd91e47b8e76ecc9f1dbb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_14
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1636
+        width: 111
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b19d2f32bf7034691e7fccacc6a81c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_15
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 1650
+        width: 117
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df4131b563c0814a837ca158d915709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_16
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 1735
+        width: 82
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170535fb2f0676a4d82cfeadcaee9f3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_17
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1713
+        width: 87
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad2996894a43744fb684a17c9c60a3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_18
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1904
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6bf9ee2c55d524cae51e25bc7d1350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_19
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 1855
+        width: 38
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d25b35ef3673742926151c751bd5d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_21
+      rect:
+        serializedVersion: 2
+        x: 2197
+        y: 1855
+        width: 49
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be098c565056bba408bbf3dddb3aad81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_24
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 1856
+        width: 51
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c960b8c08682134c9e5878c6428e1dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_29
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 1856
+        width: 46
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8277527a616f940bb721134c9a55cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_33
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 1868
+        width: 103
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b3eef36883c10458a849ef80df4a96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_34
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 1856
+        width: 21
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfb5f8ea8d04404aa715f029b35bdcf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_35
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 1856
+        width: 21
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51391f530b5f8c341bee0a0d3916d461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_36
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 1678
+        width: 33
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c649c32bcbadf594086be96c84c31483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_37
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 1653
+        width: 139
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f778e4dcfbc004a9dd3c9302a540ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_38
+      rect:
+        serializedVersion: 2
+        x: 2452
+        y: 1653
+        width: 97
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd468613fbc15f740bd68105ed1571cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_39
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 1667
+        width: 59
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5fe9708f5a41f1458ad181053201e74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_40
+      rect:
+        serializedVersion: 2
+        x: 2639
+        y: 1450
+        width: 66
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d45c6c0cf9ea24594f7b97c6c6a0be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_41
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 1450
+        width: 78
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c944a327bf01dc47aeb445c703cfe1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_42
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 1454
+        width: 92
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376e6c93dad4e1f4cb16ce2c6e162e86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_43
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 1450
+        width: 62
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f96a79a69928874da2d4d29e53c2e49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_44
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 1448
+        width: 84
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd1403c671945349b5e9054ffe0f0f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_45
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 1433
+        width: 100
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c08e1166edc6e4b824f2e05f950945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_46
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 1523
+        width: 23
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37cbda863c2c9af40b91aa0a80fd6d4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_47
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 1520
+        width: 34
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733a517c0c90555468695b64362c8b95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_48
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 1520
+        width: 35
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6ea0f160440b341a1b385c1813525e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_49
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 1519
+        width: 35
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fada49b86083804e9d22c6f1b5f391d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_50
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1520
+        width: 38
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3906a095590d754fac4f828e5b95d3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_51
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 1519
+        width: 34
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b887f9dd1f409104da90b66a222495a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_52
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1521
+        width: 34
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd6c9f9fb896814cb8a895f90b42e53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_53
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 1532
+        width: 33
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b26ec705dbe6e4c90e4cfe3e59be9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_54
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1338
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9697b467b7ff8684691efd8da5d04664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_55
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1329
+        width: 110
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41696867fa787864f9be1e3126634ebf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_56
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1313
+        width: 114
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ec53e358aa12d4e893ac193bc09380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_57
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1314
+        width: 125
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365ea6324f965a74dbe2b90bc9048768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_58
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1313
+        width: 125
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0633473883bee3041b2ec9942cbf615b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_59
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1308
+        width: 133
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22641d25a9edc7a4eaae1b78dc702948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_100
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 1286
+        width: 166
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0bc3f9d7b84014fab88aa40a04bdd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_101
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 1279
+        width: 186
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb8b7253f132d84aaec57e198ca805b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_OpenGameArt_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2731
+        height: 1282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24231207771d8c468f88d2d99a38073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
