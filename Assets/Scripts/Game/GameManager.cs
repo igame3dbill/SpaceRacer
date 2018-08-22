@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
 
     public TimeSpan time;
     public PlayerController player;
+    public GuiManager GuiManager;
 
 	// Use this for initialization
 	void Start () {
@@ -23,13 +24,6 @@ public class GameManager : MonoBehaviour {
 	void Update () {
         time += TimeSpan.FromSeconds(Time.deltaTime);
     }
-
-    public void GameOver(PlayerController player)
-    {
-        GetComponent<GameOverScript>().enabled = true;
-        player.gameObject.SetActive(false);
-    }
-
 
     private void OnDestroy()
     {

@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            GameManager.INSTANCE.GameOver(this);
+            GameManager.INSTANCE.GuiManager.GameOver();
         }
 
     }
@@ -151,7 +151,7 @@ public class PlayerController : MonoBehaviour {
             Instantiate(shipDebris, transform.position, Quaternion.identity);
             if (health <= 0)
             {
-                GameManager.INSTANCE.GameOver(this);
+                GameManager.INSTANCE.GuiManager.GameOver();
             }
         }
     }

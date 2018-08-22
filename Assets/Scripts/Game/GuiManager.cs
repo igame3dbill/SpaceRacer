@@ -5,7 +5,11 @@ using UnityEngine;
 
 public class GuiManager : MonoBehaviour {
 
+    [SerializeField] GameObject gameOverPanel;
+    bool gameOver;
     float deltaTime = 0.0f;
+    GameObject gui;
+    public bool HasOpenGui { get; private set; }
 
     // Use this for initialization
     void Start () {
@@ -15,6 +19,27 @@ public class GuiManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
+        HasOpenGui = gui != null;
+        if (!gameOver && HasOpenGui && Input.GetButtonDown("Cancel"))
+            CloseGui();
+    }
+
+    public void OpenGui(GameObject ui)
+    {
+        gui = ui;
+        gui.SetActive(true);
+        Time.timeScale = 0;
+    }
+    public void GameOver()
+    {
+        gameOver = true;
+        OpenGui(gameOverPanel);
+    }
+    void CloseGui()
+    {
+        gui.SetActive(false);
+        Time.timeScale = 1;
+        gui = null;
     }
 
     void OnGUI()

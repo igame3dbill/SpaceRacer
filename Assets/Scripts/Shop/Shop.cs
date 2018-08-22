@@ -14,27 +14,16 @@ public class Shop : MonoBehaviour {
     {
         if (collision.gameObject.CompareTag("Shop"))
         {
-            if (!shopPanel.activeInHierarchy)
+            if (!GameManager.INSTANCE.GuiManager.HasOpenGui)
             {
-                PauseGame();
+                GameManager.INSTANCE.GuiManager.OpenGui(shopPanel);
+                collision.gameObject.tag = "Untagged";
+                collision.collider.enabled = false;
             }
-            else if (shopPanel.activeInHierarchy)
+            /*else if (shopPanel.activeInHierarchy)
             {
                 ContinueGame();
-            }
+            }*/
         }
-        else return;
-    }
-    private void PauseGame()
-    {
-        Time.timeScale = 0;
-        shopPanel.SetActive(true);
-        //Disable scripts that still work while timescale is set to 0
-    }
-    private void ContinueGame()
-    {
-        Time.timeScale = 1;
-        shopPanel.SetActive(false);
-        //enable the scripts again
     }
 }
