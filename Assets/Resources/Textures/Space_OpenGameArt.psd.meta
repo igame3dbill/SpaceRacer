@@ -212,9 +212,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2296
-        width: 429
-        height: 435
+        y: 2283
+        width: 455
+        height: 448
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,10 +251,10 @@ TextureImporter:
       name: Space_OpenGameArt_4
       rect:
         serializedVersion: 2
-        x: 896
-        y: 2265
-        width: 415
-        height: 466
+        x: 861
+        y: 2258
+        width: 501
+        height: 473
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +271,10 @@ TextureImporter:
       name: Space_OpenGameArt_5
       rect:
         serializedVersion: 2
-        x: 1355
-        y: 2309
-        width: 376
-        height: 369
+        x: 1324
+        y: 2272
+        width: 439
+        height: 459
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -631,10 +631,10 @@ TextureImporter:
       name: Space_OpenGameArt_12
       rect:
         serializedVersion: 2
-        x: 1176
-        y: 1636
-        width: 151
-        height: 274
+        x: 1193
+        y: 1643
+        width: 170
+        height: 263
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
