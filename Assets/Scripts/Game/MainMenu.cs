@@ -17,9 +17,8 @@ public class MainMenu : MonoBehaviour {
     public void PlayGame()
     {
         Debug.Log("clicked");
-        SceneManager.LoadScene("SpriteStaging01");
+        SceneManager.LoadScene("SpriteStaging02");
     }
-
     public void ExitGame()
     {
         endGame = true;

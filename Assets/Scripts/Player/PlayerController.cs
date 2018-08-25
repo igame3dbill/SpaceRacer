@@ -102,12 +102,12 @@ public class PlayerController : MonoBehaviour {
         if (!collision.gameObject.CompareTag("PowerUp") && !hit)
         {
             // Debug.Log(collision.rigidbody.gameObject.name);
-            if (collision.rigidbody != null)
+            /*if (collision.rigidbody != null)
             {
                 if (transform.position.x > collision.transform.position.x)
                     collision.rigidbody.velocity += new Vector2(-2 / collision.rigidbody.mass, speed);
                 else collision.rigidbody.velocity += new Vector2(2 / collision.rigidbody.mass, speed);
-            }
+            }*/
             Debug.Log("Object collission!" + collision.gameObject.name);
             // Check which hitbox is being hit then damage ship
             float damageScale = collision.otherCollider == noseCollider ? 1f : 0.5f;
