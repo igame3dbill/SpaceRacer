@@ -10,6 +10,7 @@ TagManager:
   - Shop
   - Directory
   - Category
+  - Asteroid
   layers:
   - Default
   - TransparentFX

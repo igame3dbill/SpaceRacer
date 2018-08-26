@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 114461619421000514}
   m_Layer: 0
   m_Name: CustomAsteroid
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1598169179412824}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.51867, y: 56.0671, z: 0.17642}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9044404, y: 0.9044404, z: 0.9044404}
   m_Children:
   - {fileID: 4106727164373880}
