@@ -75,10 +75,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sightRange: 5
   minAttackRange: 2
-  maxAttackRange: 5
+  maxAttackRange: 10
   turnSpeed: 2
   moveSpeed: 8
-  attackSpeed: 8
+  attackSpeed: 3
   projectile: {fileID: 1126333279263086, guid: d963c089108049e4e848ce7f57552787, type: 2}
 --- !u!212 &212925309209038172
 SpriteRenderer:

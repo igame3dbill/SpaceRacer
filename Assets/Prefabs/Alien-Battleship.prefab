@@ -74,8 +74,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sightRange: 5
-  minAttackRange: 2
-  maxAttackRange: 5
+  minAttackRange: 1
+  maxAttackRange: 8
   turnSpeed: 2
   moveSpeed: 3
   attackSpeed: 5
