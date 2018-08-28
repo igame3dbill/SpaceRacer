@@ -81,12 +81,17 @@ public class PlayerController : MonoBehaviour {
                 rigidbody.velocity = velocity.normalized * speed * 0.5f;
             else
                 rigidbody.velocity = velocity.normalized * speed;
-            if (invulTimer <= 0) hit = false;
+            if (invulTimer <= 0)
+            {
+                hit = false;
+                Transform explosion = this.gameObject.transform.GetChild(0);
+                explosion.gameObject.SetActive(false);
+            }
 
         }
         else
         {
-            sprite.enabled = false;
+            sprite.enabled = false;      
         }
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -149,8 +154,10 @@ public class PlayerController : MonoBehaviour {
             health -= Mathf.CeilToInt(damage);
             AudioSource.PlayClipAtPoint(damageSound, transform.position, 100f);
             Instantiate(shipDebris, transform.position, Quaternion.identity);
+            Transform explosion = this.gameObject.transform.GetChild(0);
+            explosion.gameObject.SetActive(true);
             if (health <= 0)
-            {
+            {     
                 GameManager.INSTANCE.GuiManager.GameOver();
             }
         }

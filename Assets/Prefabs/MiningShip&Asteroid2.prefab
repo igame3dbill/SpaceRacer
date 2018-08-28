@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 60644753335110002}
   - component: {fileID: 50527018236172544}
   - component: {fileID: 114651729616625742}
-  - component: {fileID: 114757457399154558}
   m_Layer: 9
   m_Name: MiningShip
   m_TagString: Untagged
@@ -163,7 +162,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1295445661687104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.0765023, y: 0.536564, z: -0.0703125}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0703125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4051994432261656}
@@ -177,14 +176,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1071763605932014}
-  m_LocalRotation: {x: -0, y: -0, z: 0.316759, w: 0.94850606}
-  m_LocalPosition: {x: -1.79, y: 1.85, z: 0.0703125}
+  m_LocalRotation: {x: -0, y: -0, z: -0.3762619, w: 0.9265134}
+  m_LocalPosition: {x: -2.46, y: -3.2999997, z: 0.0703125}
   m_LocalScale: {x: 1, y: 1, z: -1}
   m_Children:
   - {fileID: 4568508608260800}
   m_Father: {fileID: 4571855816624204}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 36.934002}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -44.205}
 --- !u!4 &4706362561575558
 Transform:
   m_ObjectHideFlags: 1
@@ -371,24 +370,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
---- !u!114 &114757457399154558
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1071763605932014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a243b89aa92132345a45c6c4ed8c0663, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sightRange: 5
-  minAttackRange: 2
-  maxAttackRange: 5
-  turnSpeed: 2
-  moveSpeed: 5
-  attackSpeed: 5
-  projectile: {fileID: 1967534146507548}
 --- !u!114 &114902691445371294
 MonoBehaviour:
   m_ObjectHideFlags: 1

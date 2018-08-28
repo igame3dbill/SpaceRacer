@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ProceduralSpawner : MonoBehaviour {
-
+ 
     [SerializeField] float minTime;
     [SerializeField] float maxTime;
     [SerializeField] float timeChange;
@@ -51,7 +51,7 @@ public class ProceduralSpawner : MonoBehaviour {
                 {
                     if(weight < obj.weight)
                     {
-                        Instantiate(obj.prefab, new Vector3(Random.Range(-spawnOffset, spawnOffset), player.position.y + spawnOffset), Quaternion.identity);
+                        Instantiate(obj.prefab, new Vector3(Random.Range(-spawnOffset, spawnOffset), player.position.y + spawnOffset*4), Quaternion.identity);
                         break;
                     }
                     weight -= obj.weight;

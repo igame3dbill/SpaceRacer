@@ -78,7 +78,7 @@ MonoBehaviour:
   maxAttackRange: 5
   turnSpeed: 2
   moveSpeed: 4
-  attackSpeed: 1
+  attackSpeed: 2
   projectile: {fileID: 1126333279263086, guid: d963c089108049e4e848ce7f57552787, type: 2}
 --- !u!212 &212848906316407176
 SpriteRenderer:
