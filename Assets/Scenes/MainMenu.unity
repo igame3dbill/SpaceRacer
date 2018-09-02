@@ -167,6 +167,8 @@ MonoBehaviour:
   maxY: 4
   titleText: {fileID: 7469033}
   changeRate: 0.3
+  colorRate: 0.1
+  startColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &7469032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,7 +278,9 @@ MonoBehaviour:
   maxX: 2
   maxY: 2
   titleText: {fileID: 256612146}
-  changeRate: 0.3
+  changeRate: 0.05
+  colorRate: 0.04
+  startColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &256612145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 0.57254905}
+  m_EffectColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
   m_EffectDistance: {x: 1, y: 1}
   m_UseGraphicAlpha: 0
 --- !u!114 &256612146
@@ -428,7 +432,9 @@ MonoBehaviour:
   maxX: 2
   maxY: 2
   titleText: {fileID: 319844524}
-  changeRate: 0.5
+  changeRate: 0.05
+  colorRate: 0.04
+  startColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &319844527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,6 +559,8 @@ MonoBehaviour:
   maxY: 2
   titleText: {fileID: 560686542}
   changeRate: 0.5
+  colorRate: 0.08
+  startColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &763996274
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +777,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 55693bb365d1ba2479ccc4aed12da72b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 920981fa1e39fb646a69fc73ae8b7a71, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1041,7 +1049,9 @@ MonoBehaviour:
   maxX: 2
   maxY: 2
   titleText: {fileID: 983452315}
-  changeRate: 0.3
+  changeRate: 0.05
+  colorRate: 0.04
+  startColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &983452318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1711,7 +1721,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 2000
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -5928,7 +5938,9 @@ MonoBehaviour:
   maxX: 2
   maxY: 2
   titleText: {fileID: 1536359437}
-  changeRate: 0.3
+  changeRate: 0.05
+  colorRate: 0.04
+  startColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &1536359436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5940,7 +5952,7 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 0.57254905}
+  m_EffectColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
   m_EffectDistance: {x: 1, y: 1}
   m_UseGraphicAlpha: 0
 --- !u!114 &1536359437
@@ -6038,7 +6050,9 @@ MonoBehaviour:
   maxX: 2
   maxY: 2
   titleText: {fileID: 1627397759}
-  changeRate: 0.3
+  changeRate: 0.05
+  colorRate: 0.04
+  startColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &1627397758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6050,7 +6064,7 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 0.57254905}
+  m_EffectColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
   m_EffectDistance: {x: 1, y: 1}
   m_UseGraphicAlpha: 0
 --- !u!114 &1627397759
@@ -6416,7 +6430,9 @@ MonoBehaviour:
   maxX: 2
   maxY: 2
   titleText: {fileID: 1919320196}
-  changeRate: 0.3
+  changeRate: 0.05
+  colorRate: 0.04
+  startColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &1919320199
 MonoBehaviour:
   m_ObjectHideFlags: 0
