@@ -9,15 +9,30 @@ public class TimedTextUpdate : MonoBehaviour {
     [SerializeField]
     Text textObject;
     [Multiline]
-    string updateText;
-  
+    public string[] updateText;
+
+    float  currentTime;
+    int currentText;
 	// Use this for initialization
 	void Start () {
-		
-	}
+        currentTime = 0;
+        currentText = 0;
+        textObject.GetComponent<Text>().text = updateText[currentText];
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		
+        currentTime = currentTime + Time.deltaTime; 
+        if(currentTime >=  changeRate)
+        {
+           
+            currentTime = 0;
+            currentText++;
+            if(currentText > updateText.Length -1)
+            { currentText = 0; }
+
+            textObject.GetComponent<Text>().text = updateText[currentText];
+        }
 	}
 }
