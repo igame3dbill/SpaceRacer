@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour {
     GameObject mainMenu;
     bool endGame = false;
+    
     public void Start()
     {
        mainMenu = GameObject.FindWithTag("Menu");
@@ -17,7 +18,7 @@ public class MainMenu : MonoBehaviour {
     public void PlayGame()
     {
         Debug.Log("clicked");
-        SceneManager.LoadScene("SpriteStaging02");
+        SceneManager.LoadScene("Level1");
     }
     public void ExitGame()
     {
