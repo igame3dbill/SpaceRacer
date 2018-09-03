@@ -105,6 +105,8 @@ GameObject:
   - component: {fileID: 4941455957428680}
   - component: {fileID: 58044477175964380}
   - component: {fileID: 114692454178796852}
+  - component: {fileID: 58367159322753998}
+  - component: {fileID: 58462137821258216}
   m_Layer: 0
   m_Name: 2DAsteroidCookie
   m_TagString: Asteroid
@@ -187,14 +189,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1941530079302898}
-  m_LocalRotation: {x: 0.115314, y: 0.41536266, z: 0.4029924, w: 0.80732507}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.1365116, y: 1.5479625, z: 0.86489296}
   m_Children:
   - {fileID: 4306973679374380}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -8.545, y: 50.550003, z: 49.014004}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!23 &23603122415394554
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -348,9 +350,39 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04696695, y: -0.106197186}
+  m_Offset: {x: -0.41, y: -0.16222396}
   serializedVersion: 2
-  m_Radius: 0.8061329
+  m_Radius: 0.34644234
+--- !u!58 &58367159322753998
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1941530079302898}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.4409905, y: -0.028989756}
+  serializedVersion: 2
+  m_Radius: 0.317348
+--- !u!58 &58462137821258216
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1941530079302898}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1212415, y: 0.052599348}
+  serializedVersion: 2
+  m_Radius: 0.33189917
 --- !u!114 &114614680952730850
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -47,7 +47,8 @@ public class PlayerController : MonoBehaviour {
         Vector3 pos = transform.position;
         if (active)
         {
-            if (Input.GetKeyDown(KeyCode.Space)) health = 0; //kill button
+            if (Input.GetKeyDown(KeyCode.E)) health = 0; //kill 
+            if (Input.GetKeyDown(KeyCode.C)) health++; //cheat
             if (pos.x < -hConstraint)
                 pos.x = -hConstraint;
             else if (pos.x > hConstraint)
@@ -106,21 +107,23 @@ public class PlayerController : MonoBehaviour {
         // Debug.Log("Crashed");
         if (!collision.gameObject.CompareTag("PowerUp") && !hit)
         {
-            // Debug.Log(collision.rigidbody.gameObject.name);
-            /*if (collision.rigidbody != null)
-            {
-                if (transform.position.x > collision.transform.position.x)
-                    collision.rigidbody.velocity += new Vector2(-2 / collision.rigidbody.mass, speed);
-                else collision.rigidbody.velocity += new Vector2(2 / collision.rigidbody.mass, speed);
-            }*/
+
             Debug.Log("Object collission!" + collision.gameObject.name);
             // Check which hitbox is being hit then damage ship
             float damageScale = collision.otherCollider == noseCollider ? 1f : 0.5f;
-            
+
             //StationShop doesn't damage us
             Obstacle obstacleCheck = collision.gameObject.GetComponent<Obstacle>();
             if (obstacleCheck != null)
                 TakeDamage(collision.gameObject.GetComponent<Obstacle>().damage * damageScale);
+            if (collision.gameObject.GetComponentInChildren<RandomRotator>())
+            {
+                collision.gameObject.GetComponentInChildren<RandomRotator>().tumble++;
+                collision.gameObject.GetComponentInChildren<RandomRotator>().Tumbler();
+            }
+
+            if (collision.gameObject.GetComponent<CircleCollider2D>())
+                collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
         else if (!collision.gameObject.CompareTag("PowerUp") && hit)
         {

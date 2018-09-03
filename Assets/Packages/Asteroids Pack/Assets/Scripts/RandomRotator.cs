@@ -3,10 +3,15 @@ using System.Collections;
 
 public class RandomRotator : MonoBehaviour
 {
-    [SerializeField]
-    private float tumble;
+    
+    public float tumble;
 
-    void Start()
+     void Start()
+    {
+        Tumbler();
+    }
+
+    public void Tumbler()
     {
         GetComponent<Rigidbody>().angularVelocity = Random.insideUnitSphere * tumble;
     }

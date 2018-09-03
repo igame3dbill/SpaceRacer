@@ -144,18 +144,28 @@ MonoBehaviour:
   maxTime: 8
   timeChange: 1
   levelTime: 50
-  spawnOffset: 6
+  spawnOffset: 11
   prefabs:
   - prefab: {fileID: 1321472145481860, guid: b5ad63abd8f69ca43b30d703cc40ac53, type: 2}
-    weight: 10
+    weight: 80
   - prefab: {fileID: 1420810242283316, guid: f14af9af0702e4a47a3aee0d59998f11, type: 2}
-    weight: 10
+    weight: 80
   - prefab: {fileID: 1968546743196426, guid: 14f3347293d17b14a8f532e8d10387b0, type: 2}
-    weight: 10
+    weight: 50
   - prefab: {fileID: 1129869282767898, guid: 10f1c509c57cb134ab866ae515385f25, type: 2}
-    weight: 10
+    weight: 40
   - prefab: {fileID: 1652442442097376, guid: cfa82972e49e43d478f61c47ce3ddd8f, type: 2}
-    weight: 10
+    weight: 35
+  - prefab: {fileID: 1579718891495448, guid: 4c0bc374a7d2fa64da3d7a286ade14f6, type: 2}
+    weight: 30
+  - prefab: {fileID: 1639876495835910, guid: e92eeba6a4fd6d34fbcb0b32c921a546, type: 2}
+    weight: 25
+  - prefab: {fileID: 1183831252987404, guid: cd6d33b3467d9c44aa699eea44ce7f69, type: 2}
+    weight: 100
+  - prefab: {fileID: 1523285518772300, guid: faddcd8602650ca49af57ee0de2c2a77, type: 2}
+    weight: 15
+  - prefab: {fileID: 1579718891495448, guid: 4c0bc374a7d2fa64da3d7a286ade14f6, type: 2}
+    weight: 15
   - prefab: {fileID: 1579718891495448, guid: 4c0bc374a7d2fa64da3d7a286ade14f6, type: 2}
     weight: 15
   player: {fileID: 668784830}
@@ -11070,23 +11080,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minTime: 1
-  maxTime: 10
+  maxTime: 20
   timeChange: 1
   levelTime: 60
-  spawnOffset: 20
+  spawnOffset: 30
   prefabs:
   - prefab: {fileID: 1546293353878828, guid: 2ff125d110319024983eab6c4a1128d5, type: 2}
-    weight: 3
+    weight: 10
   - prefab: {fileID: 1130714754000060, guid: 91457c5b382540f4ab089e6d04df9da5, type: 2}
-    weight: 4
+    weight: 20
   - prefab: {fileID: 1956427127330706, guid: 8d2ae7e45a26cb74191f8706ee5360b8, type: 2}
-    weight: 5
+    weight: 30
   - prefab: {fileID: 1673363379024262, guid: ec6d67192baba3342972292ffd9eeff4, type: 2}
-    weight: 6
+    weight: 50
   - prefab: {fileID: 1053267396723832, guid: 6f5a22a5527e63d468c7640af1b45f6c, type: 2}
-    weight: 8
+    weight: 70
   - prefab: {fileID: 1977584179625002, guid: 0e1563fc57383464a9c652907260a236, type: 2}
-    weight: 4
+    weight: 100
   player: {fileID: 668784830}
 --- !u!4 &1482437442
 Transform:
@@ -11881,7 +11891,7 @@ MonoBehaviour:
   maxTime: 8
   timeChange: 1
   levelTime: 30
-  spawnOffset: 3
+  spawnOffset: 10
   prefabs:
   - prefab: {fileID: 1295445661687104, guid: 2f6c5abc198e81c448d128bbd4409136, type: 2}
     weight: 20

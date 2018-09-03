@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4246987735755326}
   - component: {fileID: 58316143635785754}
   - component: {fileID: 114612199671067598}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CustomAsteroid
   m_TagString: Asteroid
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114005587424289384}
   - component: {fileID: 33328277560013032}
   - component: {fileID: 23216596128455590}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 3DAsteroid
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4918371489041294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MiningShip&Asteroid3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 198668013938123714}
   - component: {fileID: 199488506809935022}
   - component: {fileID: 114343336340703574}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Emmiter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3979,7 +3979,7 @@ ParticleSystem:
     radiusScale: 0.3
     collidesWith:
       serializedVersion: 2
-      m_Bits: 311
+      m_Bits: 2147490615
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
