@@ -11,6 +11,7 @@ TagManager:
   - Directory
   - Category
   - Asteroid
+  - ShopCamera
   layers:
   - Default
   - TransparentFX

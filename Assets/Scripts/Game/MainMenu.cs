@@ -6,25 +6,25 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour {
     GameObject mainMenu;
     bool endGame = false;
-    
+   
+
     public void Start()
     {
        mainMenu = GameObject.FindWithTag("Menu");
     }
     public void ReturnToMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
     public void PlayGame()
     {
-        Debug.Log("clicked");
         SceneManager.LoadScene("Level1");
     }
     public void ExitGame()
     {
         endGame = true;
         mainMenu.SetActive(false);
-        Debug.Log("ExitGame");
     }
 
     public void LoadCredits()

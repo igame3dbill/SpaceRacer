@@ -10,8 +10,10 @@ public class GuiManager : MonoBehaviour {
     float deltaTime = 0.0f;
     GameObject gui;
     public bool HasOpenGui { get; private set; }
-
-    // Use this for initialization
+    [SerializeField]
+    Camera shopCamera;
+    [SerializeField]
+    GameObject activeGameplay;
     void Start () {
 		
 	}
@@ -25,18 +27,28 @@ public class GuiManager : MonoBehaviour {
     }
 
     public void OpenGui(GameObject ui)
-    {
+    { 
+      if (ui.gameObject.tag == "Shop"){
+            activeGameplay.SetActive(false);
+        }
+        else
+        {
+            activeGameplay.SetActive(true);  
+        }
+
         gui = ui;
         gui.SetActive(true);
         Time.timeScale = 0;
     }
     public void GameOver()
     {
+        
         gameOver = true;
         OpenGui(gameOverPanel);
     }
     void CloseGui()
     {
+        activeGameplay.SetActive(true);
         gui.SetActive(false);
         Time.timeScale = 1;
         gui = null;
@@ -44,7 +56,7 @@ public class GuiManager : MonoBehaviour {
 
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 200, 20), string.Format("time: {0}:{1}:{2} // health: {3}", GameManager.INSTANCE.time.Minutes, GameManager.INSTANCE.time.Seconds, GameManager.INSTANCE.time.Milliseconds, GameManager.INSTANCE.player.health));
+        GUI.Label(new Rect(10, 20, 200, 20), string.Format("time: {0}:{1}:{2} // health: {3}", GameManager.INSTANCE.time.Minutes, GameManager.INSTANCE.time.Seconds, GameManager.INSTANCE.time.Milliseconds, GameManager.INSTANCE.player.health));
         int w = Screen.width, h = Screen.height;
 
         GUIStyle style = new GUIStyle();

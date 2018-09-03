@@ -4,26 +4,23 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour {
 
-    [SerializeField] private GameObject shopPanel;
+    [SerializeField] private GameObject shopSystem;
     // Use this for initialization
     void Start()
     {
-        shopPanel.SetActive(false);
+        shopSystem.SetActive(false);
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Shop"))
         {
             if (!GameManager.INSTANCE.GuiManager.HasOpenGui)
-            {
-                GameManager.INSTANCE.GuiManager.OpenGui(shopPanel);
+            {            
+             GameManager.INSTANCE.GuiManager.OpenGui(shopSystem);
                 collision.gameObject.tag = "Untagged";
                 collision.collider.enabled = false;
             }
-            /*else if (shopPanel.activeInHierarchy)
-            {
-                ContinueGame();
-            }*/
+       
         }
     }
 }

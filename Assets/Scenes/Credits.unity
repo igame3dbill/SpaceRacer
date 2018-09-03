@@ -113,6 +113,118 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1642675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1975832618334460, guid: 0c9dbfbbf72c9844285dc01b7d7e941b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1642676}
+  - component: {fileID: 1642680}
+  - component: {fileID: 1642679}
+  - component: {fileID: 1642678}
+  - component: {fileID: 1642677}
+  m_Layer: 0
+  m_Name: TitleGlow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1642676
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224621132798657834, guid: 0c9dbfbbf72c9844285dc01b7d7e941b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642675}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 665569273}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.8999939, y: 169.79999}
+  m_SizeDelta: {x: 887, y: 104.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1642677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d671d12910f554d8cdb0833e38f567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxX: 4
+  maxY: 4
+  titleText: {fileID: 1642679}
+  changeRate: 0.3
+  colorRate: 0.1
+  startColor: {r: 0.9811321, g: 0, b: 0, a: 1}
+--- !u!114 &1642678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 0.57254905}
+  m_EffectDistance: {x: 2, y: 2}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1642679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114205190261524690, guid: 0c9dbfbbf72c9844285dc01b7d7e941b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.995283, g: 0.9999441, b: 1, a: 0.81960785}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 531f78a164011e34ca950606f8af949c, type: 3}
+    m_FontSize: 124
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 126
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: SPACE RACER
+--- !u!222 &1642680
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222561130688540232, guid: 0c9dbfbbf72c9844285dc01b7d7e941b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642675}
+  m_CullTransparentMesh: 0
 --- !u!1 &226645986
 GameObject:
   m_ObjectHideFlags: 0
@@ -5058,9 +5170,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1384014054}
+  - {fileID: 1642676}
+  - {fileID: 1091492193}
   - {fileID: 1484842987}
   - {fileID: 1973151273}
+  - {fileID: 1384014054}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5080,6 +5194,118 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79fc84af4990a7a4dac36eba61036ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1091492192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1975832618334460, guid: 0c9dbfbbf72c9844285dc01b7d7e941b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1091492193}
+  - component: {fileID: 1091492197}
+  - component: {fileID: 1091492196}
+  - component: {fileID: 1091492195}
+  - component: {fileID: 1091492194}
+  m_Layer: 0
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1091492193
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224621132798657834, guid: 0c9dbfbbf72c9844285dc01b7d7e941b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091492192}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 665569273}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 170.4}
+  m_SizeDelta: {x: 887, y: 104.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1091492194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091492192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d671d12910f554d8cdb0833e38f567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxX: 2
+  maxY: 2
+  titleText: {fileID: 1091492196}
+  changeRate: 0.5
+  colorRate: 0.08
+  startColor: {r: 0.9811321, g: 0, b: 0, a: 1}
+--- !u!114 &1091492195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091492192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 0.59607846}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1091492196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114205190261524690, guid: 0c9dbfbbf72c9844285dc01b7d7e941b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091492192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 531f78a164011e34ca950606f8af949c, type: 3}
+    m_FontSize: 124
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 124
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: SPACE RACER
+--- !u!222 &1091492197
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222561130688540232, guid: 0c9dbfbbf72c9844285dc01b7d7e941b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091492192}
+  m_CullTransparentMesh: 0
 --- !u!1 &1319990823
 GameObject:
   m_ObjectHideFlags: 0
@@ -9733,7 +9959,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 665569273}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9761,7 +9987,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 0}
     m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.14117648}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 0.02745098}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -9837,6 +10063,8 @@ GameObject:
   - component: {fileID: 1484842989}
   - component: {fileID: 1484842988}
   - component: {fileID: 1484842991}
+  - component: {fileID: 1484842990}
+  - component: {fileID: 1484842992}
   m_Layer: 5
   m_Name: TextBack
   m_TagString: Untagged
@@ -9855,12 +10083,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 665569273}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.6, y: -11.2}
-  m_SizeDelta: {x: 707.8, y: 422.9}
+  m_AnchoredPosition: {x: 1.9, y: -48.1}
+  m_SizeDelta: {x: 892.4, y: 349}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1484842988
 MonoBehaviour:
@@ -9883,20 +10111,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_FontSize: 48
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 48
+    m_MaxSize: 64
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Arapahoe Community College\nGame Design Guild\n\nJames Vogenthaler\nJacob
-    Shockley\nRainer Griffin\nBill Griffin\n\nAdditional Music By\nPunch Deck \n\nAdditional
-    Art Assets From\nUnity Asset Store\n&\nopengameart.org\n\n"
+  m_Text: 
 --- !u!222 &1484842989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9904,6 +10130,66 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1484842986}
   m_CullTransparentMesh: 0
+--- !u!114 &1484842990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1484842986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a3ee04e783fdb4fa4b22f88bf11125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeRate: 3
+  textObject: {fileID: 1484842988}
+  updateText:
+  - 'ARAPAHOE COMMUNITY COLLEGE
+
+
+    GAME DESIGN GUILD
+
+'
+  - 'James Vogenthaler
+
+
+    Jacob Shockley'
+  - 'Rainer Griffin
+
+
+    Bill Griffin
+
+'
+  - 'SPECIAL THANKS
+
+    Henry Weigle
+
+    Dan Balski'
+  - 'SPECIAL THANKS
+
+    Ryan
+
+    Jordan'
+  - 'SPECIAL THANKS
+
+    Angel
+
+    Chance'
+  - "Additional Music\r\n\rPunch Deck "
+  - "Additional Art Assets\nUnity Asset Store\r\n&\r\nopengameart.org\r\n"
+  - 'Made in Unity
+
+    with
+
+    Audacity
+
+    Blender
+
+    Caustic
+
+    Photoshop
+
+    Visual Studio'
 --- !u!114 &1484842991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9915,9 +10201,26 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 0.5}
-  m_EffectDistance: {x: 2, y: 2}
+  m_EffectColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
+  m_EffectDistance: {x: 1, y: 1}
   m_UseGraphicAlpha: 1
+--- !u!114 &1484842992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1484842986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d671d12910f554d8cdb0833e38f567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxX: 1
+  maxY: 1
+  titleText: {fileID: 1484842988}
+  changeRate: 0.05
+  colorRate: 0.1
+  startColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
 --- !u!1 &1973151272
 GameObject:
   m_ObjectHideFlags: 0
@@ -9929,6 +10232,8 @@ GameObject:
   - component: {fileID: 1973151277}
   - component: {fileID: 1973151276}
   - component: {fileID: 1973151275}
+  - component: {fileID: 1973151274}
+  - component: {fileID: 1973151278}
   m_Layer: 5
   m_Name: TextFront
   m_TagString: Untagged
@@ -9947,13 +10252,73 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 665569273}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.6, y: -11.2}
-  m_SizeDelta: {x: 707.8, y: 422.9}
+  m_AnchoredPosition: {x: 1.9, y: -48.1}
+  m_SizeDelta: {x: 892.4, y: 349}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1973151274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1973151272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a3ee04e783fdb4fa4b22f88bf11125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeRate: 3
+  textObject: {fileID: 1973151276}
+  updateText:
+  - 'ARAPAHOE COMMUNITY COLLEGE
+
+
+    GAME DESIGN GUILD
+
+'
+  - 'James Vogenthaler
+
+
+    Jacob Shockley'
+  - 'Rainer Griffin
+
+
+    Bill Griffin
+
+'
+  - 'SPECIAL THANKS
+
+    Henry Weigle
+
+    Dan Balski'
+  - 'SPECIAL THANKS
+
+    Ryan
+
+    Jordan'
+  - 'SPECIAL THANKS
+
+    Angel
+
+    Chance'
+  - "Additional Music\r\n\rPunch Deck "
+  - "Additional Art Assets\nUnity Asset Store\r\n&\r\nopengameart.org\r\n"
+  - 'Made in Unity
+
+    with
+
+    Audacity
+
+    Blender
+
+    Caustic
+
+    Photoshop
+
+    Visual Studio'
 --- !u!114 &1973151275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9989,20 +10354,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_FontSize: 48
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 48
+    m_MaxSize: 64
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Arapahoe Community College\nGame Design Guild\n\nJames Vogenthaler\nJacob
-    Shockley\nRainer Griffin\nBill Griffin\n\nAdditional Music By\nPunch Deck \n\nAdditional
-    Art Assets From\nUnity Asset Store\n&\nopengameart.org\n\n"
+  m_Text: 
 --- !u!222 &1973151277
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10010,3 +10373,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1973151272}
   m_CullTransparentMesh: 0
+--- !u!114 &1973151278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1973151272}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d671d12910f554d8cdb0833e38f567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxX: 1
+  maxY: 1
+  titleText: {fileID: 1973151276}
+  changeRate: 0.01
+  colorRate: 0.1
+  startColor: {r: 0, g: 0, b: 0, a: 1}
