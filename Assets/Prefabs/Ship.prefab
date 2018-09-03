@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198390146982052904}
   - component: {fileID: 199959485392715702}
   - component: {fileID: 114289774984058832}
-  m_Layer: 8
+  m_Layer: 31
   m_Name: ThrustEmmiter (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,13 +39,13 @@ GameObject:
   - component: {fileID: 4795113742018078}
   - component: {fileID: 212402995126365126}
   - component: {fileID: 95854374997525534}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Explosion3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1459563489005478
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 198656572856111900}
   - component: {fileID: 199115452952432228}
   - component: {fileID: 114445035243002480}
-  m_Layer: 8
+  m_Layer: 31
   m_Name: ThrustEmmiter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 95718746841562676}
   - component: {fileID: 60479325309049526}
   - component: {fileID: 114759828682743786}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Ship
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 4217884340714680}
   - component: {fileID: 212073791039302878}
   - component: {fileID: 95584562909407376}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: ShipShield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1208189218724236}
   m_LocalRotation: {x: -0, y: -0, z: 0.999991, w: 0.004239523}
-  m_LocalPosition: {x: 0.069, y: -0.252, z: 0.08129883}
+  m_LocalPosition: {x: 0.069, y: -0.252, z: -1}
   m_LocalScale: {x: 0.99999976, y: 0.99999976, z: 1}
   m_Children: []
   m_Father: {fileID: 4392164906316440}
@@ -124,7 +124,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1902185705597056}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children: []
   m_Father: {fileID: 4392164906316440}
@@ -137,7 +137,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1459563489005478}
   m_LocalRotation: {x: -0, y: -0, z: 0.999991, w: 0.004239523}
-  m_LocalPosition: {x: -0.057, y: -0.251, z: 0.08129883}
+  m_LocalPosition: {x: -0.057, y: -0.251, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4392164906316440}
@@ -149,7 +149,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1888040024531534}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -265,13 +265,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2e620acb721f62c4e8c0fd209c25ea64, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.075
+  m_Volume: 0.24
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 187
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 933a10dc68a70ac4babceaf78d9f9246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shopPanel: {fileID: 0}
+  shopSystem: {fileID: 0}
 --- !u!198 &198390146982052904
 ParticleSystem:
   m_ObjectHideFlags: 1

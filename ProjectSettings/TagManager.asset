@@ -21,8 +21,13 @@ TagManager:
   - UI
   - 
   - 
+  - Spawn
+  - Asteroid
   - MiningLaser
   - Enemy
+  - Missile
+  - Shop
+  - Powerup
   - 
   - 
   - 
@@ -39,12 +44,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
   m_SortingLayers:
   - name: Default
     uniqueID: 0
