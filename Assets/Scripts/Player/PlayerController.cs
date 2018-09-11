@@ -6,7 +6,13 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour {
 
     [SerializeField]
-    float speed = 1;
+    float speed = 1f;
+    [SerializeField]
+    float minSpeed = 2f;
+    [SerializeField]
+    float maxSpeed = 12f;
+    
+    [SerializeField]
     int hConstraint = 4;
     float invulTime = 1;       //invulnerability - measured in seconds
     float invulTimer = 0;
@@ -49,17 +55,16 @@ public class PlayerController : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.E)) health = 0; //kill 
             if (Input.GetKeyDown(KeyCode.C)) health++; //cheat
-            if (pos.x < -hConstraint)
+           /* if (pos.x < -hConstraint)
                 pos.x = -hConstraint;
             else if (pos.x > hConstraint)
-                pos.x = hConstraint;
+                pos.x = hConstraint;*/
             transform.position = pos;
             animator.SetInteger("AnimState", 0);
 
             float h = Input.GetAxisRaw("Horizontal");
             float v = Input.GetAxis("Vertical");
-            //Debug.Log(Input.GetAxisRaw("Horizontal"));
-            //Debug.Log(h);
+            
             if (h < 0f)
             {
                 animator.SetInteger("AnimState", 1);
@@ -76,11 +81,18 @@ public class PlayerController : MonoBehaviour {
             //Debug.Log(h);
 
             Vector3 velocity = Vector3.up;
+
             velocity.x = h;
+            
             //velocity += transform.up;
-            if (v < 0)
-                rigidbody.velocity = velocity.normalized * speed * 0.5f;
-            else
+            if (v < 0f && speed >= minSpeed)
+            {
+                speed = speed - .05f;
+            }
+            else if (v > 0f && speed <= maxSpeed)
+            {
+                speed = speed + .05f;
+            }
                 rigidbody.velocity = velocity.normalized * speed;
             if (invulTimer <= 0)
             {

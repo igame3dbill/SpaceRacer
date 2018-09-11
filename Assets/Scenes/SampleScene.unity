@@ -1168,7 +1168,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  noseCollider: {fileID: 0}
   health: 10
+  damageSound: {fileID: 0}
+  shieldSound: {fileID: 0}
+  shipDebris: {fileID: 0}
+  powerUpSound: {fileID: 0}
+  shipShield: {fileID: 0}
 --- !u!60 &668784832
 PolygonCollider2D:
   m_ObjectHideFlags: 0

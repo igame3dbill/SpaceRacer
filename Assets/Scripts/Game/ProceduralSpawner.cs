@@ -9,7 +9,9 @@ public class ProceduralSpawner : MonoBehaviour {
     [SerializeField] float timeChange;
     [SerializeField] float levelTime;
     [SerializeField] float spawnOffset;
-
+    [SerializeField] float minSize = 1f;
+    [SerializeField] float maxSize = 1f;
+    [SerializeField] float zPlane = -1f;
     [SerializeField] SpawnableObject[] prefabs;
     [SerializeField] Transform player;
 
@@ -51,7 +53,9 @@ public class ProceduralSpawner : MonoBehaviour {
                 {
                     if(weight < obj.weight)
                     {
-                        Instantiate(obj.prefab, new Vector3(Random.Range(-spawnOffset, spawnOffset), player.position.y + spawnOffset*4), Quaternion.identity);
+                        Instantiate(obj.prefab, new Vector3(Random.Range(-spawnOffset, spawnOffset), player.position.y + spawnOffset*4, zPlane), Quaternion.identity);
+                        float randomSize = Random.Range(minSize, maxSize);
+                        obj.prefab.transform.localScale = new Vector3(randomSize, randomSize, randomSize);
                         break;
                     }
                     weight -= obj.weight;
@@ -62,6 +66,7 @@ public class ProceduralSpawner : MonoBehaviour {
         }
     }
     [System.Serializable]
+
     class SpawnableObject
     {
         public GameObject prefab;

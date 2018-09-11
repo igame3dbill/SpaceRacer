@@ -185,8 +185,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 10
+  m_AngularDrag: 1
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -438,9 +438,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d239714be26d664e95ce50b37a2d45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 8
+  hConstraint: 4
   noseCollider: {fileID: 60479325309049526}
-  health: 10
+  health: 9
   damageSound: {fileID: 8300000, guid: ba95cba38b8333f40a4a9f1c4b775c95, type: 3}
   shieldSound: {fileID: 8300000, guid: ca1120d297dac344bbf284fc05a87db1, type: 3}
   shipDebris: {fileID: 198865969789430624, guid: 3369fc8f11fecc74993bf3849b86d370,
@@ -9674,7 +9675,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 101
-  m_Sprite: {fileID: 21300000, guid: 6252b3dae8581f64390d171efe7a3629, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 6252b3dae8581f64390d171efe7a3629, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9720,7 +9721,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: 21300000, guid: 21205136ea04ece4fafd0039507059d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c0bebb7eaf78fa4a96382eef4463c4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
