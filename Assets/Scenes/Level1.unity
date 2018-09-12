@@ -141,10 +141,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minTime: 1
-  maxTime: 60
+  maxTime: 20
   timeChange: 1
-  levelTime: 100
-  spawnOffset: 3
+  levelTime: 40
+  spawnOffset: 4
   minSize: 0.5
   maxSize: 1
   zPlane: -4
@@ -894,12 +894,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minTime: 1
-  maxTime: 30
+  maxTime: 10
   timeChange: 1
-  levelTime: 40
+  levelTime: 60
   spawnOffset: 6
-  minSize: 1
-  maxSize: 1
+  minSize: 0.5
+  maxSize: 2
   zPlane: -1
   prefabs:
   - prefab: {fileID: 1784741521355174, guid: 89bd4acddf7d5eb45966684b1080c76a, type: 2}
@@ -1814,11 +1814,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minTime: 1
-  maxTime: 260
+  maxTime: 40
   timeChange: 1
   levelTime: 400
   spawnOffset: 10
-  minSize: 0.12
+  minSize: 0.5
   maxSize: 4
   zPlane: 100
   prefabs:
@@ -2001,7 +2001,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1517049669}
-  - component: {fileID: 1517049670}
   m_Layer: 8
   m_Name: ObjectSpawning
   m_TagString: Untagged
@@ -2027,19 +2026,6 @@ Transform:
   m_Father: {fileID: 1132794116}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1517049670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1517049668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6b95b2af21fed54589dd3df3b56d3ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 668784830}
-  offset: {x: 0, y: -10, z: 0}
 --- !u!1 &1548033123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,13 +2697,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minTime: 1
-  maxTime: 110
+  maxTime: 55
   timeChange: 1
-  levelTime: 300
+  levelTime: 100
   spawnOffset: 6
   minSize: 1
   maxSize: 1
-  zPlane: 10
+  zPlane: -1
   prefabs:
   - prefab: {fileID: 1295445661687104, guid: 2f6c5abc198e81c448d128bbd4409136, type: 2}
     weight: 10
