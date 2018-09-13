@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4607351771431306}
   - component: {fileID: 212557498607810622}
-  m_Layer: 0
+  - component: {fileID: 58462594632157766}
+  m_Layer: 17
   m_Name: Map-855
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,11 +36,26 @@ Transform:
   m_GameObject: {fileID: 1750446358356060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3234477, y: 2.3234477, z: 2.3234477}
+  m_LocalScale: {x: 1.8049892, y: 1.8049892, z: 1.8049892}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58462594632157766
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750446358356060}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5599997
 --- !u!212 &212557498607810622
 SpriteRenderer:
   m_ObjectHideFlags: 1

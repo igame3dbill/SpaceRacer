@@ -22,6 +22,9 @@ GameObject:
   - component: {fileID: 212909386614720642}
   - component: {fileID: 114439259929732110}
   - component: {fileID: 50564409578231828}
+  - component: {fileID: 70728798199133336}
+  - component: {fileID: 70300488737027736}
+  - component: {fileID: 70906750590777172}
   m_Layer: 11
   m_Name: Alien-Cruiser
   m_TagString: Enemy
@@ -37,7 +40,7 @@ Transform:
   m_GameObject: {fileID: 1129869282767898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8442019, y: 0.8442019, z: 0.8442019}
+  m_LocalScale: {x: 1.0226822, y: 1.0226822, z: 1.0226822}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -62,6 +65,51 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &70300488737027736
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1129869282767898}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.66, y: 0.2}
+  m_Size: {x: 0.22319673, y: 1.5600569}
+  m_Direction: 0
+--- !u!70 &70728798199133336
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1129869282767898}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0063262586, y: 0.0734353}
+  m_Size: {x: 0.33147076, y: 1.766667}
+  m_Direction: 0
+--- !u!70 &70906750590777172
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1129869282767898}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.6736664, y: 0.19641805}
+  m_Size: {x: 0.22319673, y: 1.5600569}
+  m_Direction: 0
 --- !u!114 &114439259929732110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,12 +121,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e89004d55e830f4a9cdf356df2e315a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sightRange: 5
-  minAttackRange: 2
+  sightRange: 10
+  minAttackRange: 1
   maxAttackRange: 8
-  turnSpeed: 2
-  moveSpeed: 4
-  attackSpeed: 4
+  turnSpeed: 4
+  moveSpeed: 12
+  attackSpeed: 12
   projectile: {fileID: 1126333279263086, guid: d963c089108049e4e848ce7f57552787, type: 2}
 --- !u!212 &212909386614720642
 SpriteRenderer:

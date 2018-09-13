@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ProceduralSpawner : MonoBehaviour {
- 
+    [SerializeField] GameObject offsetObject;
     [SerializeField] float minTime;
     [SerializeField] float maxTime;
     [SerializeField] float timeChange;
@@ -53,7 +53,9 @@ public class ProceduralSpawner : MonoBehaviour {
                 {
                     if(weight < obj.weight)
                     {
-                        Instantiate(obj.prefab, new Vector3(Random.Range(-spawnOffset, spawnOffset), player.position.y + spawnOffset*4, zPlane), Quaternion.identity);
+                        Vector3 sourcePosition = offsetObject.GetComponent<Transform>().position;
+                        
+                        Instantiate(obj.prefab, new Vector3(Random.Range(sourcePosition.x - spawnOffset, sourcePosition.x+spawnOffset), player.position.y + spawnOffset*3, zPlane), Quaternion.identity);
                         float randomSize = Random.Range(minSize, maxSize);
                         obj.prefab.transform.localScale = new Vector3(randomSize, randomSize, randomSize);
                         break;

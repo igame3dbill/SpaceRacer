@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour {
-
+    
     PlayerController player;
     [SerializeField] float sightRange = 5;
     [SerializeField] float minAttackRange = 2;
@@ -18,6 +18,8 @@ public class EnemyAI : MonoBehaviour {
     Rigidbody2D rigidbody;
 	// Use this for initialization
 	void Start () {
+        this.gameObject.AddComponent<Obstacle>();
+        this.gameObject.GetComponent<Obstacle>().damage = Random.Range(1f,2f);
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         rigidbody = GetComponent<Rigidbody2D>();
         sqrSight = sightRange * sightRange;

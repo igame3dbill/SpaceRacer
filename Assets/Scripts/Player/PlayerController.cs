@@ -32,7 +32,8 @@ public class PlayerController : MonoBehaviour {
     public ParticleSystem shipDebris;
     public AudioClip powerUpSound;
     public GameObject shipShield;
-
+    public GameObject atmosphereSkim;
+    float skimTimer = 0f;
     // Use this for initialization
     void Start () {
         animator = GetComponent<Animator>();
@@ -40,7 +41,10 @@ public class PlayerController : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
         sprite = GetComponent<SpriteRenderer>();
         sprite.enabled = true;
-	}
+        atmosphereSkim.SetActive(false);
+        
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -111,15 +115,30 @@ public class PlayerController : MonoBehaviour {
         {
             GameManager.INSTANCE.GuiManager.GameOver();
         }
+        if (skimTimer >= 1f)
+        {
+            atmosphereSkim.SetActive(true);
+            --skimTimer;
+        }
+        else
+        {
+            atmosphereSkim.SetActive(false);
+        }
 
     }
 
+    
     void OnCollisionEnter2D(Collision2D collision)
     {
         // Debug.Log("Crashed");
         if (!collision.gameObject.CompareTag("PowerUp") && !hit)
         {
-
+            if (collision.collider.gameObject.layer == 17)
+            {
+                skimTimer = 100f * (collision.collider.gameObject.GetComponent<Transform>().localScale.x/2);
+                //return;
+            }
+            
             Debug.Log("Object collission!" + collision.gameObject.name);
             // Check which hitbox is being hit then damage ship
             float damageScale = collision.otherCollider == noseCollider ? 1f : 0.5f;
@@ -134,7 +153,7 @@ public class PlayerController : MonoBehaviour {
                 collision.gameObject.GetComponentInChildren<RandomRotator>().Tumbler();
             }
 
-            if (collision.gameObject.GetComponent<CircleCollider2D>())
+            if (collision.gameObject.GetComponent<CircleCollider2D>() && !gameObject.CompareTag("Planet"))
                 collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
         else if (!collision.gameObject.CompareTag("PowerUp") && hit)

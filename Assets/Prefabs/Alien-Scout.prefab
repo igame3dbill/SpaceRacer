@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212925622565106354}
   - component: {fileID: 114086380347692482}
   - component: {fileID: 50077765313992108}
+  - component: {fileID: 70266423263851792}
   m_Layer: 11
   m_Name: Alien-Scout
   m_TagString: Enemy
@@ -37,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1523285518772300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.73189235, y: 0.73189235, z: 0.73189235}
+  m_LocalScale: {x: 0.78270596, y: 0.78270596, z: 0.78270596}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -62,6 +63,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &70266423263851792
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523285518772300}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.006378718, y: 0.102010675}
+  m_Size: {x: 0.29769787, y: 1.0759786}
+  m_Direction: 0
 --- !u!114 &114086380347692482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,12 +89,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e89004d55e830f4a9cdf356df2e315a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sightRange: 5
-  minAttackRange: 2
+  sightRange: 20
+  minAttackRange: 1
   maxAttackRange: 4
-  turnSpeed: 2
-  moveSpeed: 9
-  attackSpeed: 5
+  turnSpeed: 6
+  moveSpeed: 12
+  attackSpeed: 12
   projectile: {fileID: 1126333279263086, guid: d963c089108049e4e848ce7f57552787, type: 2}
 --- !u!212 &212925622565106354
 SpriteRenderer:

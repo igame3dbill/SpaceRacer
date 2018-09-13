@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4079855621214898}
   - component: {fileID: 212340785483920986}
-  m_Layer: 0
+  - component: {fileID: 58298350867423214}
+  m_Layer: 17
   m_Name: Map-8
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,11 +36,26 @@ Transform:
   m_GameObject: {fileID: 1760143127433348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.21428974, y: 0.21428974, z: 0}
+  m_LocalScale: {x: 1.046381, y: 1.046381, z: 1.046381}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58298350867423214
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1760143127433348}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5599997
 --- !u!212 &212340785483920986
 SpriteRenderer:
   m_ObjectHideFlags: 1

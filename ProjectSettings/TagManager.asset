@@ -12,6 +12,8 @@ TagManager:
   - Category
   - Asteroid
   - ShopCamera
+  - Bullet
+  - Planet
   layers:
   - Default
   - TransparentFX
@@ -28,9 +30,9 @@ TagManager:
   - Missile
   - Shop
   - Powerup
-  - 
-  - 
-  - 
+  - Bullet
+  - BackgroundStars
+  - Planets
   - 
   - 
   - 
