@@ -25,7 +25,8 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         time += TimeSpan.FromSeconds(Time.deltaTime);
-        OnUpdateEvent();
+        if(OnUpdateEvent != null)
+            OnUpdateEvent();
     }
 
     private void OnDestroy()

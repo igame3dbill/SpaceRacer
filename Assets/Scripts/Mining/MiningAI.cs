@@ -30,6 +30,8 @@ public class MiningAI : MonoBehaviour {
         //Vector3 angles = transform.eulerAngles;
         //angles.z = Vector3.Angle(Vector3.zero, displacement);
         //transform.eulerAngles = angles;
+        if (obstacle == null)
+            return;
         float sqrMag = (transform.position - obstacle.transform.position).sqrMagnitude;
         if (sqrMag < sqrSight)
         {

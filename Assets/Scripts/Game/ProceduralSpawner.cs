@@ -3,28 +3,80 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ProceduralSpawner : MonoBehaviour {
-    [SerializeField] GameObject offsetObject;
-    [SerializeField] float minTime;
-    [SerializeField] float maxTime;
-    [SerializeField] float timeChange;
-    [SerializeField] float levelTime;
-    [SerializeField] float spawnOffset;
-    [SerializeField] float minSize = 1f;
-    [SerializeField] float maxSize = 1f;
+    /// <summary>
+    /// The Minimum Distance between spawns
+    /// </summary>
+    [SerializeField] float minFrequency;
+    /// <summary>
+    /// The maximum distance between spawns
+    /// </summary>
+    [SerializeField] float maxFrequency;
+
+    /// <summary>
+    /// The amount by which the distance of spawns changes
+    /// </summary>
+    [SerializeField] float frequencyChange;
+    /// <summary>
+    /// The distance traveled before the frequency changes
+    /// </summary>
+    [SerializeField] float levelDistance;
+
+    /// <summary>
+    /// The horizontal spawn offset
+    /// </summary>
+    [SerializeField] float spawnOffsetHorizontal;
+    /// <summary>
+    /// The vertical spawn offset
+    /// </summary>
+    [SerializeField] float spawnOffsetVertical;
+    /// <summary>
+    /// The Z level of the spawns
+    /// </summary>
     [SerializeField] float zPlane = -1f;
+
+    [SerializeField] float deathDistance;
+    float deathDistanceSqr;
+
+    /// <summary>
+    /// List of possible object to spawn
+    /// </summary>
     [SerializeField] SpawnableObject[] prefabs;
+    /// <summary>
+    /// The transform of the player object
+    /// </summary>
     [SerializeField] Transform player;
 
-    float spawnTimer;
-    float spawnTime;
-    float levelTimer;
+    /// <summary>
+    /// The last y of the player
+    /// </summary>
+    float lastY;
 
+    /// <summary>
+    /// The distance traveled from last spawn
+    /// </summary>
+    [SerializeField] float distance;
+    /// <summary>
+    /// The distance traveled since traveled from last frequency change
+    /// </summary>
+    [SerializeField] float traveledDistance;
+    /// <summary>
+    /// The distance between spawns
+    /// </summary>
+    float frequency;
+
+    /// <summary>
+    /// The total weight to for weighted random
+    /// </summary>
     float combinedWeight;
+
+    List<GameObject> spawnedObjects;
 
 	// Use this for initialization
 	void Start () {
-        spawnTime = maxTime;
-        levelTimer = levelTime;
+        frequency = maxFrequency;
+        distance = Random.Range(0, maxFrequency);
+        spawnedObjects = new List<GameObject>();
+        deathDistanceSqr = deathDistance * deathDistance;
         GameManager.INSTANCE.OnUpdateEvent += OnUpdate;
 
         foreach(SpawnableObject obj in prefabs)
@@ -35,16 +87,18 @@ public class ProceduralSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void OnUpdate () {
-        spawnTimer -= Time.deltaTime;
-        levelTimer -= Time.deltaTime;
+        float change = player.position.y - lastY;
+        distance += change;
+        traveledDistance += change;
+        lastY = player.position.y;
 
-        if(levelTimer <= 0 && spawnTimer > minTime)
+        if(minFrequency < frequency && traveledDistance == levelDistance)
         {
-            spawnTime -= timeChange;
-            if (spawnTime < minTime)
-                spawnTime = minTime;
+            frequency -= frequencyChange;
+            if (frequency < minFrequency)
+                frequency = minFrequency;
         }
-        if (spawnTimer <= 0)
+        if (distance >= frequency)
         {
             if(prefabs != null && prefabs.Length > 0)
             {
@@ -53,25 +107,41 @@ public class ProceduralSpawner : MonoBehaviour {
                 {
                     if(weight < obj.weight)
                     {
-                        Vector3 sourcePosition = offsetObject.GetComponent<Transform>().position;
                         
-                        Instantiate(obj.prefab, new Vector3(Random.Range(sourcePosition.x - spawnOffset, sourcePosition.x+spawnOffset), player.position.y + spawnOffset*3, zPlane), Quaternion.identity);
-                        float randomSize = Random.Range(minSize, maxSize);
-                        obj.prefab.transform.localScale = new Vector3(randomSize, randomSize, randomSize);
+                        GameObject go = Instantiate(obj.prefab, new Vector3(Random.Range(player.position.x - spawnOffsetHorizontal, player.position.x+spawnOffsetHorizontal), player.position.y + spawnOffsetVertical, zPlane), Quaternion.identity);
+                        float randomSize = Random.Range(obj.minSize, obj.maxSize);
+                        go.transform.localScale = new Vector3(randomSize, randomSize, randomSize);
+                        spawnedObjects.Add(go);
                         break;
                     }
                     weight -= obj.weight;
                 }
                 
             }
-            spawnTimer = spawnTime;
+            distance -= frequency;
+        }
+        while(spawnedObjects.Count > 0 &&
+            Vector3.SqrMagnitude(player.position-spawnedObjects[0].transform.position) >= deathDistanceSqr) {
+            GameObject go = spawnedObjects[0];
+            spawnedObjects.Remove(spawnedObjects[0]);
+            Destroy(go);
         }
     }
-    [System.Serializable]
 
+    void OnDestroy()
+    {
+        if(GameManager.INSTANCE != null)
+        {
+            GameManager.INSTANCE.OnUpdateEvent -= OnUpdate;
+        }
+    }
+
+    [System.Serializable]
     class SpawnableObject
     {
         public GameObject prefab;
         public float weight;
+        public float minSize = 1f;
+        public float maxSize = 1f;
     }
 }
