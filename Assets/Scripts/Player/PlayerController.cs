@@ -69,6 +69,16 @@ public class PlayerController : MonoBehaviour {
             float h = Input.GetAxisRaw("Horizontal");
             float v = Input.GetAxis("Vertical");
             
+            if(Input.touchCount > 0)
+            {
+                Touch touchInput = Input.GetTouch(0);
+                if(touchInput.phase == TouchPhase.Moved)
+                {
+                    h = touchInput.deltaPosition.x / (Screen.width / 80);
+                    v = touchInput.deltaPosition.y / (Screen.height / 80);
+                }
+            }
+
             if (h < 0f)
             {
                 animator.SetInteger("AnimState", 1);
@@ -86,8 +96,6 @@ public class PlayerController : MonoBehaviour {
 
             Vector3 velocity = Vector3.up;
 
-            velocity.x = h;
-            
             //velocity += transform.up;
             if (v < 0f && speed >= minSpeed)
             {
@@ -97,7 +105,9 @@ public class PlayerController : MonoBehaviour {
             {
                 speed = speed + .05f;
             }
-                rigidbody.velocity = velocity.normalized * speed;
+            velocity.x = h * speed;
+            velocity.y = speed;
+            rigidbody.velocity = velocity;
             if (invulTimer <= 0)
             {
                 hit = false;
