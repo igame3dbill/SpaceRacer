@@ -133,6 +133,7 @@ public class PlayerController : MonoBehaviour {
         // Debug.Log("Crashed");
         if (!collision.gameObject.CompareTag("PowerUp") && !hit)
         {
+            // NOTE: Use On Trigger Enter events and trigger colliders
             if (collision.collider.gameObject.layer == 17)
             {
                 skimTimer = 100f * (collision.collider.gameObject.GetComponent<Transform>().localScale.x/2);
@@ -162,11 +163,12 @@ public class PlayerController : MonoBehaviour {
         }
         else if (collision.gameObject.CompareTag("PowerUp"))
         {
+            
             health = health + 1;
-            AudioSource.PlayClipAtPoint(powerUpSound, transform.position, 400f);
-            collision.gameObject.SetActive(false);
+            //AudioSource.PlayClipAtPoint(powerUpSound, transform.position, 100f);
+           // collision.gameObject.SetActive(false);
            
-        }
+       }
     }
 
     private void OnParticleCollision(GameObject other)

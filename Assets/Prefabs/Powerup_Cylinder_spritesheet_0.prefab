@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 95818756549391264}
   - component: {fileID: 58314800800492374}
   - component: {fileID: 82219787109888392}
+  - component: {fileID: 114110312352807012}
   m_Layer: 0
   m_Name: Powerup_Cylinder_spritesheet_0
   m_TagString: PowerUp
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1348973160231222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 7.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -171,6 +172,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114110312352807012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1348973160231222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d8391efb61f6e48bb4a853f7b9e1db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpSound: {fileID: 8300000, guid: aea10f07c8ad9424c9a95100a92714a2, type: 3}
 --- !u!212 &212295986521676106
 SpriteRenderer:
   m_ObjectHideFlags: 1
