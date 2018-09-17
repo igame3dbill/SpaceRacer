@@ -163,8 +163,9 @@ public class PlayerController : MonoBehaviour {
         else if (collision.gameObject.CompareTag("PowerUp"))
         {
             health = health + 1;
+            AudioSource.PlayClipAtPoint(powerUpSound, transform.position, 400f);
             collision.gameObject.SetActive(false);
-            AudioSource.PlayClipAtPoint(powerUpSound, transform.position, 100f);
+           
         }
     }
 
