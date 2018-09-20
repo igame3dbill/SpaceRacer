@@ -72,9 +72,25 @@ public class PlayerController : MonoBehaviour {
             if(Input.touchCount > 0)
             {
                 Touch touchInput = Input.GetTouch(0);
+                if(touchInput.position.x >= (Screen.width / 2) )
+                {
+                    h = 1;
+                } else if(touchInput.position.x <= (Screen.width / 2) )
+                {
+                    h = -1;
+                }
+
+                /*if (touchInput.position.y >= (Screen.height / 2))
+                {
+                    v = 1;
+                }
+                else if (touchInput.position.y <= (Screen.height / 2))
+                {
+                    v = -1;
+                }*/
                 if(touchInput.phase == TouchPhase.Moved)
                 {
-                    h = touchInput.deltaPosition.x / (Screen.width / 80);
+                    //h = touchInput.deltaPosition.x / (Screen.width / 80);
                     v = touchInput.deltaPosition.y / (Screen.height / 80);
                 }
             }
