@@ -20124,7 +20124,12 @@ Prefab:
     - target: {fileID: 114834755782340948, guid: 662790305aa243044a136a4a8ccbd8b3,
         type: 2}
       propertyPath: offset.z
-      value: 10
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114834755782340948, guid: 662790305aa243044a136a4a8ccbd8b3,
+        type: 2}
+      propertyPath: offset.y
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 662790305aa243044a136a4a8ccbd8b3, type: 2}
